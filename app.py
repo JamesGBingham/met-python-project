@@ -1,8 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
-
-@app.route("/")
-   HEADER = '\033[95m'
+ HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKCYAN = '\033[96m'
     OKGREEN = '\033[92m'
@@ -11,5 +9,7 @@ app = Flask(__name__)
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+@app.route("/")
+  
 def hello():
     return (bcolors.WARNING + "Aloha, Ohana!" + bcolors.ENDC)
